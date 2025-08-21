@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+    height: 10vh;
+    background-color: rgba(154, 155, 218);
+    box-shadow: 0px -3px 15px 8px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px -3px 15px 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px -3px 15px 8px rgba(0, 0, 0, 0.4);
+}
+
+.overlay {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(154, 155, 218, 0.85);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.3s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 5%;
+    /* 25% from the top */
+    width: 50%;
+    /* 100% width */
+    text-align: left;
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay-content hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #181818;
+    margin: 0 30px;
+
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #181818;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* .overlay #closebtn {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+} */
+
+.overlay #closebtn img{
+    position: absolute;
+    right: 5%;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#botonNavAbrir {
+    background: none;
+    border: none;
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+#seccionPrincipal {
+    z-index: 0;
+    background-color: #F2EFA1;
+    height: 150vh;
+}
