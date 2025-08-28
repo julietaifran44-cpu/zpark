@@ -19,7 +19,7 @@ nav {
 
 .overlay {
     height: 100%;
-    width: 40%;
+    width: 0%;
     position: fixed;
     /* Stay in place */
     z-index: 2;
@@ -152,3 +152,4 @@ nav {
 .titulos span{
     color: rgba(154, 155, 218, 0.85);
 }
+
