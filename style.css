@@ -107,3 +107,48 @@ nav {
     background-color: #F2EFA1;
     height: 150vh;
 }
+
+#seccionPrincipal h2{
+    margin: 0;
+}
+
+#inicioBotones{
+    padding: 15vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#vipImg{
+    margin-left: 15px;
+}
+
+#corporativoImg{
+    margin-right: 15px;
+}
+
+#culturaImg{
+    margin-left: 10px;
+}
+
+.inicioImg{
+    height: 28vw;
+}
+
+.titulos{
+    padding-top: 5vh;
+    width: 500vw;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #181818;
+}
+
+.titulos span{
+    color: rgba(154, 155, 218, 0.85);
+}
