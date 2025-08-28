@@ -8,7 +8,12 @@ h1 {
 }
 
 nav {
+    padding: 1vh 1.5vh;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     z-index: 1;
     height: 10vh;
     background-color: rgba(154, 155, 218);
@@ -98,8 +103,6 @@ nav {
     background: none;
     border: none;
     position: relative;
-    margin-top: 2vh;
-    margin-left: 2vw;
 }
 
 #seccionPrincipal {
@@ -152,4 +155,5 @@ nav {
 .titulos span{
     color: rgba(154, 155, 218, 0.85);
 }
+
 
