@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
 }
 
 h1 {
@@ -15,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    height: 10vh;
+    height: 8vh;
     background-color: rgba(154, 155, 218);
     box-shadow: 0px -3px 15px 8px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px -3px 15px 8px rgba(0, 0, 0, 0.4);
@@ -26,17 +29,12 @@ nav {
     height: 100%;
     width: 0%;
     position: fixed;
-    /* Stay in place */
     z-index: 2;
-    /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgba(154, 155, 218, 0.85);
-    /* Black w/opacity */
+    background-color: rgba(154, 155, 218, 0.95);
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     transition: 0.3s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 
@@ -44,13 +42,9 @@ nav {
 .overlay-content {
     position: relative;
     top: 5%;
-    /* 25% from the top */
     width: 50%;
-    /* 100% width */
     text-align: left;
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
+    margin-top: 30px;}
 
 .overlay-content hr {
     display: block;
@@ -71,31 +65,32 @@ nav {
     font-size: 20px;
     color: #181818;
     display: block;
-    /* Display block instead of inline */
     transition: 0.3s;
     /* Transition effects on hover (color) */
 }
-
-/* .overlay #closebtn {
-    position: absolute;
-    top: 2vh;
-    right: 2vw;
-} */
 
 .overlay #closebtn img{
     position: absolute;
     right: 5%;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
     .overlay a {
-        font-size: 20px
+        font-size: 17px;
     }
 
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+    .overlay-content{
+        width: 60%;
+    }
+
+    .overlay-content hr {
+        display: block;
+        height: 1px;
+        width: 100%;
+        border: 0;
+        border-top: 2px solid #181818;
+        margin: 0 30px;
+    
     }
 }
 
@@ -108,7 +103,9 @@ nav {
 #seccionPrincipal {
     z-index: 0;
     background-color: #F2EFA1;
-    height: 150vh;
+    width: 100vw;
+    display: block;
+    padding-top: 6vh;
 }
 
 #seccionPrincipal h2{
@@ -141,19 +138,80 @@ nav {
     height: 28vw;
 }
 
-.titulos{
-    padding-top: 5vh;
-    width: 500vw;
+.titulosAnim{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+
     text-decoration: none;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
-    color: #181818;
+    margin-bottom: 3vh;
 }
 
-.titulos span{
+.titulosAnim .scrollAnim{
+    white-space: nowrap;
+    animation: scroll 5s linear infinite;
+    max-width: none;
+}
+
+.scrollAnim span{
     color: rgba(154, 155, 218, 0.85);
 }
 
+@keyframes scroll{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
 
+#experiencias{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+
+}
+
+#video{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.iconoEstrella{
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+#footer-placeholder{
+    display: inline;
+}
+
+.subtitulos{
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+.uniteTexto{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+}
+
+.fondoCuadrado{
+    background-image: url(/img/fondoCuadrado.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 2.2rem 1rem 4rem 2.2rem;
+    margin-left: 20px;
+}

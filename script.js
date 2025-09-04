@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("navHamg").style.width = "70%";
+    document.getElementById("navHamg").style.width = "75%";
 
     const botonAbrir = document.getElementById('botonNavAbrirImg');
     botonAbrir.style.visibility = 'hidden';
@@ -15,4 +15,3 @@ function openNav() {
       }, "200");
         
 }
-
