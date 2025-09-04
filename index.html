@@ -10,8 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -27,7 +26,7 @@
 
             <!-- Button to close the overlay navigation -->
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">
-                <img src="./img/SVG/menuN.svg" alt="botonHamburguesa" height="35px" width="auto">
+                <img src="/img/SVG/menú N.svg" alt="botonHamburguesa" height="35px" width="auto">
             </a>
 
             <!-- Overlay content -->
@@ -48,30 +47,58 @@
 
         </div>
         <button id="botonNavAbrir" onclick="openNav()">
-            <img id="botonNavAbrirImg" src="./img/SVG/menuN.svg" alt="botonHamburguesa" height="35px" width="auto">
+            <img id="botonNavAbrirImg" src="/img/SVG/menú N.svg" alt="botonHamburguesa" height="35px" width="auto">
         </button>
 
-        <img src="./img/SVG/zparkNombreA.svg" alt="sparkLogo" height="20vh" width="auto">
+        <img src="/img/SVG/zparkNombreA.svg" alt="sparkLogo" height="20vh" width="auto">
     </nav>
 
     <section id="seccionPrincipal">
-        <h2 class="titulos">SERVICIOS <span>SERVICIOS</span> SERVICIOS <span>SERVICIOS</span></h2>
-        <div id="inicioBotones">
-            <a><img class="inicioImg" src="./img/SVG/conferenciaN.svg" alt=""></a>
-            <a><img class="inicioImg" src="./img/SVG/showsN.svg" alt=""></a>
-            <a><img id="vipImg" class="inicioImg" src="./img/SVG/vipN.svg" alt=""></a>
-            <a><img id="corporativoImg" class="inicioImg" src="./img/SVG/corporativoN.svg" alt=""></a>
-            <a><img id="culturaImg" class="inicioImg" src="./img/SVG/culturaN.svg" alt=""></a>
-            <a><img class="inicioImg" src="./img/SVG/benéficoN.svg" alt=""></a>
+        <div class="titulosAnim">
+            <h2 class="scrollAnim">SERVICIOS<span>SERVICIOS</span></h2>
+            <h2 class="scrollAnim">SERVICIOS<span>SERVICIOS</span></h2>
+            <h2 class="scrollAnim">SERVICIOS<span>SERVICIOS</span></h2>
         </div>
+        
+        <div id="inicioBotones">
+            <a><img class="inicioImg" src="./img/SVG/conferencia N.svg" alt=""></a>
+            <a><img class="inicioImg" src="./img/SVG/shows N.svg" alt=""></a>
+            <a><img id="vipImg" class="inicioImg" src="./img/SVG/vip N.svg" alt=""></a>
+            <a><img id="corporativoImg" class="inicioImg" src="./img/SVG/corporativo N.svg" alt=""></a>
+            <a><img id="culturaImg" class="inicioImg" src="./img/SVG/cultura N.svg" alt=""></a>
+            <a><img class="inicioImg" src="./img/SVG/benéfico N.svg" alt=""></a>
+        </div>
+        
+        <div id="experiencias">
+            <div class="titulosAnim">
+            <h2 class="scrollAnim">EXPERIENCIAS<span>EXPERIENCIAS</span></h2>
+            <h2 class="scrollAnim">EXPERIENCIAS<span>EXPERIENCIAS</span></h2>
+            <h2 class="scrollAnim">EXPERIENCIAS<span>EXPERIENCIAS</span></h2>
+            </div>
 
-        <h2 class="titulos">EXPERIENCIAS <span>EXPERIENCIAS</span> EXPERIENCIAS <span>EXPERIENCIAS</span></h2>
+        <img id="video" src="/img/REDBULL.png" alt="video">
+        <img class="iconoEstrella" src="/img/SVG/zparkN.svg" alt="iconoZpark">
+        
+        <p class="subtitulos">DÓNDE ESTAMOS</p>
+
+
+        <img class="iconoEstrella" src="/img/SVG/zparkN.svg" alt="iconoZpark">
+        
+        <p class="subtitulos">DÓNDE ESTAMOS</p>
+
+        <div class="fondoCuadrado">
+            <p class="uniteTexto">Juntos podemos crear experiencias inolvidables con propósito y pasión.</p>
+        </div>
+         </div>
+        
     </section>
 
 
+    <div id="footer-placeholder"></div>
+
     <script src="/script.js"></script>
+    <script src="/componente.js"></script>
 
 </body>
 
 </html>
-
